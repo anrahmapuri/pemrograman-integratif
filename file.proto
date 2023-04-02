@@ -10,8 +10,8 @@ service CrudService {
 }
 
 message CreateRequest {
-  string name = 1;
-  string email = 2;
+  string username = 1;
+  string password = 2;
 }
 
 message CreateResponse {
@@ -23,14 +23,14 @@ message ReadRequest {
 }
 
 message ReadResponse {
-  string name = 1;
-  string email = 2;
+  string username = 1;
+  string password = 2;
 }
 
 message UpdateRequest {
   string id = 1;
-  string name = 2;
-  string email = 3;
+  string username = 2;
+  string password = 3;
 }
 
 message UpdateResponse {}
